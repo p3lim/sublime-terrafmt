@@ -1,4 +1,12 @@
 {
+	/*
+		Executable that formats the file contents.
+		The file contents is passed to the executable as STDIN, and expects the full file in return.
+	*/
 	"cmd": ["terraform", "fmt", "-"],
+
+	/*
+		Change this to `false` to disable auto-formatting on file saves.
+	*/
 	"format_on_save": true
 }

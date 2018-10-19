@@ -6,26 +6,18 @@ There's also a command palette entry called `Terrafmt: Format this file` to manu
 
 ## Options
 
-Options are stores in `Packages/User/Terrafmt.sublime-settings`, you can also find it through the menu.
+Users can override the options in `Packages/User/Terrafmt.sublime-settings`.
 
-```json
-{
-	// the command and arguments to run, the file contents are sent as stdin
-	"cmd": ["terraform", "fmt", "-"],
-	// enable the package to run on file saves
-	"format_on_save": true
-}
-```
+This file can be opened either through the menus (_Preferences_ > _Package Settings_ > _Terrafmt_ > _Settings_) or through the command palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) and enter `Preferences: Terrafmt settings`.
 
 ## Installation
 
 ##### Using the package manager
 
 1. Install the [Sublime Text Package Control](//packagecontrol.io/installation) plugin if you haven't already.
-    - Menu entry _Preferences_ > _Package Control_
+    - _Preferences_ > _Package Control_
 2. Open up the command palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) and enter `Package Control: Install Package`
 3. Search for `Terrafmt` and hit <kbd>Enter</kbd> to install.
-4. Follow the instructions that appears on the screen.
 
 ##### Manual installation with Git
 

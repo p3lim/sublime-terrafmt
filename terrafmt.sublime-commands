@@ -8,7 +8,7 @@
 		"command": "edit_settings",
 		"args": {
 			"base_file": "${packages}/Terrafmt/Terrafmt.sublime-settings",
-			"default": "${packages}/User/Terrafmt.sublime-settings"
+			"default": "// Any settings in this file overrides the default ones\n{\n\t$0\n}\n"
 		}
 	}
 ]

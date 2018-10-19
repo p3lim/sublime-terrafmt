@@ -2,5 +2,13 @@
 	{
 		"caption": "Terrafmt: Format this file",
 		"command": "terrafmt"
+	},
+	{
+		"caption": "Preferences: Terrafmt settings",
+		"command": "edit_settings",
+		"args": {
+			"base_file": "${packages}/Terrafmt/Terrafmt.sublime-settings",
+			"default": "${packages}/User/Terrafmt.sublime-settings"
+		}
 	}
 ]

@@ -1,29 +1,19 @@
 [
 	{
-		"mnemonic": "n",
-		"caption": "Preferences",
 		"id": "preferences",
 		"children": [
 			{
-				"mnemonic": "P",
-				"caption": "Package Settings",
 				"id": "package-settings",
 				"children": [
 					{
 						"caption": "Terrafmt",
 						"children": [
 							{
-								"caption": "Settings - Default",
-								"command": "open_file",
+								"caption": "Settings",
+								"command": "edit_settings",
 								"args": {
-									"file": "${packages}/Terrafmt/Terrafmt.sublime-settings"
-								}
-							},
-							{
-								"caption": "Settings - User",
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/User/Terrafmt.sublime-settings"
+									"base_file": "${packages}/Terrafmt/Terrafmt.sublime-settings",
+									"default": "${packages}/User/Terrafmt.sublime-settings"
 								}
 							}
 						]

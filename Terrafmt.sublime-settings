@@ -1,0 +1,4 @@
+{
+	"cmd": ["terraform", "fmt", "-"],
+	"format_on_save": true
+}

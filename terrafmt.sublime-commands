@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Terrafmt: Format this file",
+		"command": "terrafmt"
+	}
+]

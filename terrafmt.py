@@ -105,7 +105,7 @@ class TerrafmtCommand(sublime_plugin.TextCommand):
 
 		:returns: bool
 		'''
-		return self.view.score_selector(0, 'source.terraform') != 0
+		return any(self.view.score_selector(0, i) for i in ['source.terraform', 'source.terraform-vars'])
 
 	def run(self, edit):
 		'''

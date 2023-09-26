@@ -1,5 +1,6 @@
 import re
 import subprocess
+import os
 
 import sublime
 import sublime_plugin
@@ -63,8 +64,15 @@ class Formatter(object):
 		:returns: stdout, stderr: Returns the stdout if successful, an empty stdout and error if
 		    unsuccessful.
 		'''
+		startupinfo = None
+
+		if os.name == 'nt':
+			startupinfo = subprocess.STARTUPINFO()
+			startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+			
 		proc = subprocess.Popen(
 			self.cmd,
+			startupinfo=startupinfo,
 			stdin=subprocess.PIPE,
 			stdout=subprocess.PIPE,
 			stderr=subprocess.PIPE
